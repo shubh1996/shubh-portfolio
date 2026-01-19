@@ -1,0 +1,45 @@
+{
+  "name": "Shubh Mehta",
+  "role": "Architecting the Future of Supply Chain with GenAI @ Google",
+  "subRole": "Senior Product Engineer | PMP Certified | Expert in Angular, Next.js, and LLM Orchestration",
+  "googleStack": {
+    "title": "Google Stack (via Bristlecone)",
+    "keywords": ["Gemini", "Supply Chain AI", "Chiron Clone", "Critique", "Cider"],
+    "badge": "Praised for Resourcefulness"
+  },
+  "skills": {
+    "ai_automation": ["n8n", "Cursor", "Claude", "Perplexity"],
+    "frontend": ["Angular Expert", "RxJs", "Next.js"],
+    "leadership": ["PMP", "Team Lead of 5"]
+  },
+  "experience": [
+    {
+      "company": "Google (via Bristlecone)",
+      "period": "Present",
+      "role": "Senior Product Engineer",
+      "description": "Leading GenAI initiatives in Supply Chain."
+    },
+    {
+      "company": "Soroco",
+      "period": "2022 - 2024",
+      "role": "Architecture Refactoring",
+      "description": "Refactored core architecture for scalability."
+    },
+    {
+      "company": "Maistering B.V.",
+      "period": "2020 - 2022",
+      "role": "Cognitive APIs",
+      "description": "Developed cognitive APIs for enterprise solutions."
+    }
+  ],
+  "aiPlayground": {
+    "title": "GitHub AI Learning Series",
+    "description": "Exploring n8n workflow automation and prompt chaining.",
+    "link": "https://github.com/shubh1996"
+  },
+  "contact": {
+    "email": "shubh@example.com",
+    "linkedin": "https://linkedin.com/in/shubh1996",
+    "pmp_verified": true
+  }
+}
