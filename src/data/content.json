@@ -122,6 +122,75 @@
         "github": "https://github.com/shubh1996/shubhandpriyanka",
         "deployed": "#"
       }
+    },
+    {
+      "title": "Enterprise Automation Ecosystem",
+      "description": "Complex n8n pipelines for social media automation and LLM-based sentiment analysis for community engagement.",
+      "tags": [
+        "n8n",
+        "Python",
+        "LLM Chaining",
+        "Automation"
+      ],
+      "links": {
+        "github": "#",
+        "deployed": "#"
+      }
+    },
+    {
+      "title": "Basic Voice Chat",
+      "description": "A minimal real-time voice chat setup exploring WebRTC and audio streaming fundamentals.",
+      "tags": [
+        "WebRTC",
+        "JavaScript",
+        "Audio",
+        "Real-time"
+      ],
+      "links": {
+        "github": "https://github.com/shubh1996/basic-voice-chat",
+        "deployed": "#"
+      }
+    },
+    {
+      "title": "RNSIT College Website",
+      "description": "Official college website project for RNS Institute of Technology, built during undergraduate studies.",
+      "tags": [
+        "HTML/CSS",
+        "JavaScript",
+        "Web"
+      ],
+      "links": {
+        "github": "https://github.com/shubh1996/rnsit",
+        "deployed": "#"
+      }
+    },
+    {
+      "title": "AFrame VR Basics",
+      "description": "Explorations into WebVR/XR using A-Frame to build immersive browser-based 3D experiences.",
+      "tags": [
+        "WebVR",
+        "A-Frame",
+        "3D",
+        "XR"
+      ],
+      "links": {
+        "github": "https://github.com/shubh1996/aframe",
+        "deployed": "#"
+      }
+    },
+    {
+      "title": "CLU — C++ Operating System",
+      "description": "A low-level operating system kernel written in C++ as part of systems programming coursework, exploring memory management and process scheduling.",
+      "tags": [
+        "C++",
+        "OS",
+        "Systems",
+        "Low-level"
+      ],
+      "links": {
+        "github": "https://github.com/shubh1996/CLU",
+        "deployed": "#"
+      }
     }
   ],
   "education": [
