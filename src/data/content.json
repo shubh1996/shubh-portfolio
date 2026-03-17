@@ -4,8 +4,8 @@
   "subRole": "PMP® Certified | Lead Engineer @ Google Internal Stack | Expert in GenAI Orchestration",
   "contact": {
     "email": "shubhmehta1996@gmail.com",
-    "linkedin": "https://linkedin.com/in/shubhmehta",
-    "website": "https://shubhmehta.com",
+    "linkedin": "https://www.linkedin.com/in/shubhmehta/",
+    "website": "https://www.shubhmehta.com/",
     "phone": "+91 8095945150",
     "pmp_verified": true
   },
@@ -78,26 +78,26 @@
         "Gemini"
       ],
       "links": {
-        "github": "https://github.com/shubhmehta",
-        "deployed": "https://flowher.in"
+        "github": "https://github.com/shubh1996/flowher",
+        "deployed": "https://www.flowher.in/"
       }
     },
     {
-      "title": "Enterprise Automation Ecosystem",
-      "description": "Complex n8n pipelines for social media automation and LLM-based sentiment analysis for community engagement.",
+      "title": "Digital Wardrobe",
+      "description": "AI-powered wardrobe management app that helps users organize outfits, plan looks, and get smart styling suggestions.",
       "tags": [
-        "n8n",
-        "Python",
-        "LLM Chaining",
-        "Automation"
+        "AI",
+        "Next.js",
+        "Fashion Tech",
+        "Vercel"
       ],
       "links": {
-        "github": "https://github.com/shubhmehta",
-        "deployed": "#"
+        "github": "https://github.com/shubh1996/digital-wardrobe",
+        "deployed": "https://digital-wardrobe-nu.vercel.app/"
       }
     },
     {
-      "title": "Automatic Quiz Generator",
+      "title": "AI Quiz Generator",
       "description": "AI-powered tool that converts documentation into technical training modules, reducing manual assessment time by 85%.",
       "tags": [
         "EdTech",
@@ -106,7 +106,20 @@
         "Automation"
       ],
       "links": {
-        "github": "https://github.com/shubhmehta",
+        "github": "https://github.com/shubh1996/ai-quiz-generator",
+        "deployed": "https://ai-quiz-generator-peach.vercel.app/"
+      }
+    },
+    {
+      "title": "Wedding Website",
+      "description": "A personal wedding website built to celebrate and share the special occasion with friends and family.",
+      "tags": [
+        "Personal",
+        "Next.js",
+        "Web"
+      ],
+      "links": {
+        "github": "https://github.com/shubh1996/shubhandpriyanka",
         "deployed": "#"
       }
     }
