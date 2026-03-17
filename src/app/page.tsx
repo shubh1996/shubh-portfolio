@@ -1,7 +1,11 @@
 import Hero from "@/components/Hero";
 import BentoGrid from "@/components/BentoGrid";
 import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
+import Education from "@/components/Education";
+import Certifications from "@/components/Certifications";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import Scene from "@/components/ui/Scene";
 import CursorGradient from "@/components/ui/CursorGradient";
 
@@ -13,11 +17,21 @@ export default function Home() {
       <CursorGradient />
       <Scene />
 
+      {/* Navigation */}
+      <Navbar />
+
       {/* Content */}
       <div className="relative z-10">
         <Hero />
-        <BentoGrid />
-        <Experience />
+        <div id="skills">
+          <BentoGrid />
+        </div>
+        <Projects />
+        <div id="experience">
+          <Experience />
+        </div>
+        <Education />
+        <Certifications />
         <Footer />
       </div>
 
@@ -29,3 +43,4 @@ export default function Home() {
     </main>
   );
 }
+

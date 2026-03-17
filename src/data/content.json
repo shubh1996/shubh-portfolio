@@ -1,45 +1,156 @@
 {
   "name": "Shubh Mehta",
-  "role": "Architecting the Future of Supply Chain with GenAI @ Google",
-  "subRole": "Senior Product Engineer | PMP Certified | Expert in Angular, Next.js, and LLM Orchestration",
+  "role": "Technical Leader & AI Architect",
+  "subRole": "PMP® Certified | Lead Engineer @ Google Internal Stack | Expert in GenAI Orchestration",
+  "contact": {
+    "email": "shubhmehta1996@gmail.com",
+    "linkedin": "https://linkedin.com/in/shubhmehta",
+    "website": "https://shubhmehta.com",
+    "phone": "+91 8095945150",
+    "pmp_verified": true
+  },
   "googleStack": {
-    "title": "Google Stack (via Bristlecone)",
-    "keywords": ["Gemini", "Supply Chain AI", "Chiron Clone", "Critique", "Cider"],
-    "badge": "Praised for Resourcefulness"
+    "title": "Google Internal Stack",
+    "keywords": [
+      "Gemini",
+      "Chiron",
+      "Cider",
+      "Critique",
+      "Internal API Governance"
+    ],
+    "badge": "Exceptional Resourcefulness"
   },
   "skills": {
-    "ai_automation": ["n8n", "Cursor", "Claude", "Perplexity"],
-    "frontend": ["Angular Expert", "RxJs", "Next.js"],
-    "leadership": ["PMP", "Team Lead of 5"]
+    "ai_automation": [
+      "Gemini & OpenAI SDKs",
+      "n8n Workflow Automation",
+      "RAG Architectures",
+      "Prompt Engineering"
+    ],
+    "frontend": [
+      "Angular (Expert)",
+      "Next.js & TypeScript",
+      "RxJs & NgRx",
+      "GoJS & D3.js"
+    ],
+    "leadership": [
+      "PMP Project Management",
+      "Team Leadership (Lead Track)",
+      "Stakeholder Orchestration",
+      "Agile/Scrum/Kanban"
+    ],
+    "infrastructure": [
+      "Google Cloud (GCP)",
+      "CI/CD Pipelines",
+      "Docker",
+      "Azure DevOps"
+    ]
   },
   "experience": [
     {
-      "company": "Google (via Bristlecone)",
-      "period": "Present",
-      "role": "Senior Product Engineer",
-      "description": "Leading GenAI initiatives in Supply Chain."
+      "company": "Bristlecone (Client: Google India Pvt. Ltd.)",
+      "period": "May 2024 - Present",
+      "role": "Senior Specialist - Product Engineering (Lead Track)",
+      "description": "Leading GenAI initiatives for global supply chain operations within the Google ecosystem. Architected high-impact applications using Gemini to automate server location policies. Mentoring multiple engineers and resolving technical blockers as a primary escalation point."
     },
     {
       "company": "Soroco",
-      "period": "2022 - 2024",
-      "role": "Architecture Refactoring",
-      "description": "Refactored core architecture for scalability."
+      "period": "March 2021 - April 2024",
+      "role": "Software Engineer (Leadership Track)",
+      "description": "Led the migration from monolithic to modular frontend architecture, boosting velocity by 20%. Managed engineering interns and orchestrated task delegation for a 5-person pod using Angular and GoJS. Won Internal Hackathon prize for technical excellence."
     },
     {
       "company": "Maistering B.V.",
-      "period": "2020 - 2022",
-      "role": "Cognitive APIs",
-      "description": "Developed cognitive APIs for enterprise solutions."
+      "period": "Nov 2018 - Feb 2021",
+      "role": "Application Service Engineer",
+      "description": "Led POC initiatives using Microsoft Cognitive APIs for voice-to-text and sentiment analysis. Designed onboarding frameworks for UI hires and received CEO praise for technical innovation and delivery excellence."
     }
   ],
-  "aiPlayground": {
-    "title": "GitHub AI Learning Series",
-    "description": "Exploring n8n workflow automation and prompt chaining.",
-    "link": "https://github.com/shubh1996"
-  },
-  "contact": {
-    "email": "shubh@example.com",
-    "linkedin": "https://linkedin.com/in/shubh1996",
-    "pmp_verified": true
-  }
+  "projects": [
+    {
+      "title": "flowher.in",
+      "role": "Founder & Full-Stack Architect",
+      "description": "SaaS platform for AI workflow orchestration. Integrated Gemini and Next.js for context-aware content generation.",
+      "tags": [
+        "GenAI",
+        "Next.js",
+        "SaaS",
+        "Gemini"
+      ],
+      "links": {
+        "github": "https://github.com/shubhmehta",
+        "deployed": "https://flowher.in"
+      }
+    },
+    {
+      "title": "Enterprise Automation Ecosystem",
+      "description": "Complex n8n pipelines for social media automation and LLM-based sentiment analysis for community engagement.",
+      "tags": [
+        "n8n",
+        "Python",
+        "LLM Chaining",
+        "Automation"
+      ],
+      "links": {
+        "github": "https://github.com/shubhmehta",
+        "deployed": "#"
+      }
+    },
+    {
+      "title": "Automatic Quiz Generator",
+      "description": "AI-powered tool that converts documentation into technical training modules, reducing manual assessment time by 85%.",
+      "tags": [
+        "EdTech",
+        "AI",
+        "NLP",
+        "Automation"
+      ],
+      "links": {
+        "github": "https://github.com/shubhmehta",
+        "deployed": "#"
+      }
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Engineering in Computer Science",
+      "institution": "RNS Institute of Technology",
+      "period": "2014 - 2018",
+      "board": null,
+      "location": "Bangalore, India"
+    },
+    {
+      "degree": "L.K.G to 12th Standard",
+      "institution": "Sri Vani Education Center",
+      "period": "2000 - 2014",
+      "board": "CBSE",
+      "location": "Bangalore, India"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "PMP® Certified",
+      "issuer": "Project Management Institute",
+      "year": "2025",
+      "color": "indigo"
+    },
+    {
+      "title": "Generative AI & Predictive AI in the Cloud",
+      "issuer": "Google",
+      "year": "2024",
+      "color": "blue"
+    },
+    {
+      "title": "Using GenAI for Leadership",
+      "issuer": "LinkedIn Learning",
+      "year": "2024",
+      "color": "violet"
+    },
+    {
+      "title": "Scrum Fundamentals Certified",
+      "issuer": "Scrum Alliance",
+      "year": "2023",
+      "color": "emerald"
+    }
+  ]
 }

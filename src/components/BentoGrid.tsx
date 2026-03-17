@@ -2,7 +2,7 @@
 
 import GlassCard from "./ui/GlassCard";
 import content from "@/data/content.json";
-import { Cpu, Globe, Users, Code2, BrainCircuit, Zap } from "lucide-react";
+import { Cpu, Globe, Users, Code2, BrainCircuit, Zap, Server } from "lucide-react";
 
 export default function BentoGrid() {
     return (
@@ -37,10 +37,10 @@ export default function BentoGrid() {
                     <div className="flex items-start justify-between">
                         <div>
                             <h4 className="text-lg font-semibold text-slate-300 mb-4">AI & Automation</h4>
-                            <div className="flex flex-wrap gap-3">
+                            <div className="grid grid-cols-2 gap-x-6 gap-y-2">
                                 {content.skills.ai_automation.map((s) => (
-                                    <div key={s} className="flex items-center gap-2 text-slate-400">
-                                        <div className="w-1.5 h-1.5 rounded-full bg-violet-500" />
+                                    <div key={s} className="flex items-center gap-2 text-slate-400 text-sm">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-violet-500 shrink-0" />
                                         {s}
                                     </div>
                                 ))}
@@ -56,30 +56,46 @@ export default function BentoGrid() {
                         <Users className="text-emerald-500/50" size={32} />
                         <div>
                             <h4 className="text-lg font-semibold text-slate-300 mt-4">Leadership</h4>
-                            <p className="text-sm text-slate-500 mt-1">PMP | Team Lead of 5</p>
+                            <div className="space-y-1">
+                                {content.skills.leadership.slice(0, 2).map(skill => (
+                                    <p key={skill} className="text-xs text-slate-500">{skill}</p>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </GlassCard>
+
+                {/* Infrastructure */}
+                <GlassCard className="col-span-1">
+                    <div className="flex flex-col h-full justify-between">
+                        <Server className="text-orange-500/50" size={32} />
+                        <div>
+                            <h4 className="text-lg font-semibold text-slate-300 mt-4">Infrastructure</h4>
+                            <div className="space-y-1">
+                                {content.skills.infrastructure.slice(0, 2).map(skill => (
+                                    <p key={skill} className="text-xs text-slate-500">{skill}</p>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </GlassCard>
 
                 {/* Frontend */}
-                <GlassCard className="col-span-1">
-                    <div className="flex flex-col h-full justify-between">
-                        <Code2 className="text-blue-500/50" size={32} />
-                        <div>
-                            <h4 className="text-lg font-semibold text-slate-300 mt-4">Frontend</h4>
-                            <p className="text-sm text-slate-500 mt-1">Angular Expert | Next.js</p>
-                        </div>
-                    </div>
-                </GlassCard>
-
-                {/* AI Playground */}
                 <GlassCard className="col-span-1 md:col-span-2 row-span-1 border-indigo-500/20">
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between h-full">
                         <div>
-                            <h4 className="text-xl font-bold mb-2">{content.aiPlayground.title}</h4>
-                            <p className="text-slate-400 text-sm max-w-md">{content.aiPlayground.description}</p>
+                            <h4 className="text-xl font-bold mb-4 flex items-center gap-2">
+                                <Code2 className="text-blue-500" size={24} /> Frontend Architecture
+                            </h4>
+                            <div className="flex flex-wrap gap-2">
+                                {content.skills.frontend.map((s) => (
+                                    <span key={s} className="px-3 py-1 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs">
+                                        {s}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
-                        <Globe className="text-indigo-400 animate-pulse" size={40} />
+                        <Globe className="text-indigo-400/30 hidden md:block" size={60} />
                     </div>
                 </GlassCard>
             </div>
