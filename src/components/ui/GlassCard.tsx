@@ -16,11 +16,11 @@ export default function GlassCard({ children, className, delay = 0 }: GlassCardP
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
       className={cn(
-        "glass rounded-3xl p-6 relative overflow-hidden group hover:border-violet-500/30 hover:bg-white/[0.07] transition-all duration-500",
+        "glass rounded-3xl p-6 relative overflow-hidden group hover:border-orange-300/60 hover:shadow-md transition-all duration-500",
         className
       )}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-violet-500/5 via-transparent to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-50/60 via-transparent to-rose-50/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       {children}
     </motion.div>
   );

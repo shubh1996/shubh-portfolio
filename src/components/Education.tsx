@@ -7,8 +7,8 @@ import GlassCard from "./ui/GlassCard";
 
 const icons = [GraduationCap, School];
 const iconStyles = [
-    { bg: "bg-emerald-500/20", text: "text-emerald-400" },
-    { bg: "bg-sky-500/20", text: "text-sky-400" },
+    { bg: "bg-emerald-100", text: "text-emerald-600", badge: "bg-emerald-50 border-emerald-200 text-emerald-700" },
+    { bg: "bg-sky-100", text: "text-sky-600", badge: "bg-sky-50 border-sky-200 text-sky-700" },
 ];
 
 export default function Education() {
@@ -19,11 +19,11 @@ export default function Education() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-4"
+                    className="flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-600 text-xs font-bold uppercase tracking-wider mb-4"
                 >
                     <GraduationCap size={14} /> Education
                 </motion.div>
-                <h2 className="text-4xl font-bold text-center">Academic Background</h2>
+                <h2 className="text-4xl font-bold text-stone-900 text-center">Academic Background</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -39,15 +39,15 @@ export default function Education() {
                                 <p className={`text-xs font-bold uppercase tracking-wider ${style.text} mb-1`}>
                                     {edu.period}
                                 </p>
-                                <h3 className="text-xl font-bold text-white mb-1">{edu.degree}</h3>
+                                <h3 className="text-xl font-bold text-stone-900 mb-1">{edu.degree}</h3>
                                 <p className={`${style.text} font-medium mb-1`}>{edu.institution}</p>
                                 <div className="flex items-center gap-3 mt-2 flex-wrap">
                                     {edu.board && (
-                                        <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-slate-800 text-slate-400 border border-slate-700">
+                                        <span className={`px-2 py-0.5 rounded text-[10px] font-bold uppercase border ${style.badge}`}>
                                             {edu.board}
                                         </span>
                                     )}
-                                    <span className="text-xs text-slate-500">{edu.location}</span>
+                                    <span className="text-xs text-stone-400">{edu.location}</span>
                                 </div>
                             </div>
                         </GlassCard>

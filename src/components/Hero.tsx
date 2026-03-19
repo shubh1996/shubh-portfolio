@@ -17,9 +17,9 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
-                    className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-300 text-sm font-medium"
+                    className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-orange-300 bg-orange-50 text-orange-600 text-sm font-medium"
                 >
-                    <span className="w-2 h-2 rounded-full bg-violet-400 animate-pulse" />
+                    <span className="w-2 h-2 rounded-full bg-orange-400 animate-pulse" />
                     PMP® Certified Technical Leader
                 </motion.span>
 
@@ -29,13 +29,13 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3 }}
                 >
-                    <span className="bg-clip-text text-transparent bg-gradient-to-br from-white via-blue-100 to-violet-300">
+                    <span className="bg-clip-text text-transparent bg-gradient-to-br from-stone-900 via-stone-700 to-stone-500">
                         {content.name}
                     </span>
                 </motion.h1>
 
                 <motion.p
-                    className="text-xl md:text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400"
+                    className="text-xl md:text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-rose-500 to-violet-500"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.35 }}
@@ -44,7 +44,7 @@ export default function Hero() {
                 </motion.p>
 
                 <motion.p
-                    className="text-base md:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed"
+                    className="text-base md:text-lg text-stone-500 max-w-2xl mx-auto leading-relaxed"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 }}
@@ -52,7 +52,6 @@ export default function Hero() {
                     {content.subRole}
                 </motion.p>
 
-                {/* Contact chips */}
                 <motion.div
                     className="flex flex-wrap gap-3 justify-center"
                     initial={{ opacity: 0, y: 20 }}
@@ -61,17 +60,17 @@ export default function Hero() {
                 >
                     <a
                         href={`mailto:${content.contact.email}`}
-                        className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] text-slate-400 text-xs hover:text-white hover:border-violet-500/40 hover:bg-violet-500/10 transition-all"
+                        className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-stone-200 text-stone-500 text-xs hover:text-stone-900 hover:border-orange-300 hover:bg-orange-50 transition-all shadow-sm"
                     >
                         <Mail size={12} /> {content.contact.email}
                     </a>
                     <a
                         href={`tel:${content.contact.phone}`}
-                        className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] text-slate-400 text-xs hover:text-white hover:border-violet-500/40 hover:bg-violet-500/10 transition-all"
+                        className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-stone-200 text-stone-500 text-xs hover:text-stone-900 hover:border-orange-300 hover:bg-orange-50 transition-all shadow-sm"
                     >
                         <Phone size={12} /> {content.contact.phone}
                     </a>
-                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] text-slate-400 text-xs">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-stone-200 text-stone-500 text-xs shadow-sm">
                         <MapPin size={12} /> Bengaluru, India
                     </span>
                 </motion.div>
@@ -84,7 +83,7 @@ export default function Hero() {
                 >
                     <a
                         href="#projects"
-                        className="px-8 py-3 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-semibold hover:from-violet-500 hover:to-fuchsia-500 transition-all shadow-lg shadow-violet-500/25"
+                        className="px-8 py-3 rounded-full bg-gradient-to-r from-orange-500 to-rose-500 text-white font-semibold hover:from-orange-400 hover:to-rose-400 transition-all shadow-lg shadow-orange-200"
                     >
                         View Projects
                     </a>
@@ -92,16 +91,15 @@ export default function Hero() {
                         href={content.contact.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-8 py-3 rounded-full border border-white/10 bg-white/[0.04] backdrop-blur-sm text-white font-semibold hover:bg-white/[0.08] hover:border-white/20 transition-all"
+                        className="px-8 py-3 rounded-full border border-stone-200 bg-white text-stone-700 font-semibold hover:border-stone-300 hover:bg-stone-50 transition-all shadow-sm"
                     >
                         Connect on LinkedIn
                     </a>
                 </motion.div>
             </motion.div>
 
-            {/* Scroll cue */}
             <motion.div
-                className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-slate-600"
+                className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-stone-400"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.2 }}

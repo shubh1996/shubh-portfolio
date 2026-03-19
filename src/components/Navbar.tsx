@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import content from "@/data/content.json";
@@ -30,42 +30,39 @@ export default function Navbar() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
                 scrolled
-                    ? "bg-[#04091a]/85 backdrop-blur-xl border-b border-white/[0.06] shadow-lg shadow-black/30"
+                    ? "bg-white/80 backdrop-blur-xl border-b border-stone-200/80 shadow-sm"
                     : "bg-transparent"
             }`}
         >
             <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-                {/* Logo */}
-                <a href="#" className="text-white font-black text-xl tracking-tight">
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400">
+                <a href="#" className="font-black text-xl tracking-tight">
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-rose-500 to-violet-500">
                         {content.name.split(" ")[0]}
                     </span>
-                    <span className="text-slate-500 font-light">.dev</span>
+                    <span className="text-stone-400 font-light">.dev</span>
                 </a>
 
-                {/* Desktop nav */}
                 <nav className="hidden md:flex items-center gap-8">
                     {navLinks.map((link) => (
                         <a
                             key={link.href}
                             href={link.href}
-                            className="text-sm text-slate-400 hover:text-white transition-colors font-medium relative group"
+                            className="text-sm text-stone-500 hover:text-stone-900 transition-colors font-medium relative group"
                         >
                             {link.label}
-                            <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-gradient-to-r from-violet-400 to-cyan-400 group-hover:w-full transition-all duration-300" />
+                            <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-gradient-to-r from-orange-400 to-rose-400 group-hover:w-full transition-all duration-300" />
                         </a>
                     ))}
                     <a
                         href={`mailto:${content.contact.email}`}
-                        className="px-4 py-1.5 rounded-full bg-gradient-to-r from-violet-600/20 to-fuchsia-600/20 border border-violet-500/30 text-violet-300 text-sm font-semibold hover:from-violet-600/40 hover:to-fuchsia-600/40 transition-all"
+                        className="px-4 py-1.5 rounded-full bg-gradient-to-r from-orange-500 to-rose-500 text-white text-sm font-semibold hover:from-orange-400 hover:to-rose-400 transition-all shadow-sm shadow-orange-200"
                     >
                         Hire Me
                     </a>
                 </nav>
 
-                {/* Mobile toggle */}
                 <button
-                    className="md:hidden text-slate-400 hover:text-white"
+                    className="md:hidden text-stone-500 hover:text-stone-900"
                     onClick={() => setMenuOpen(!menuOpen)}
                     aria-label="Toggle menu"
                 >
@@ -73,26 +70,25 @@ export default function Navbar() {
                 </button>
             </div>
 
-            {/* Mobile dropdown */}
             {menuOpen && (
                 <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="md:hidden bg-[#04091a]/95 backdrop-blur-xl border-b border-white/[0.06] px-4 py-6 space-y-4"
+                    className="md:hidden bg-white/95 backdrop-blur-xl border-b border-stone-200 px-4 py-6 space-y-4"
                 >
                     {navLinks.map((link) => (
                         <a
                             key={link.href}
                             href={link.href}
                             onClick={() => setMenuOpen(false)}
-                            className="block text-slate-300 hover:text-white text-base font-medium"
+                            className="block text-stone-700 hover:text-stone-900 text-base font-medium"
                         >
                             {link.label}
                         </a>
                     ))}
                     <a
                         href={`mailto:${content.contact.email}`}
-                        className="inline-block mt-2 px-5 py-2 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white text-sm font-semibold"
+                        className="inline-block mt-2 px-5 py-2 rounded-full bg-gradient-to-r from-orange-500 to-rose-500 text-white text-sm font-semibold"
                     >
                         Hire Me
                     </a>

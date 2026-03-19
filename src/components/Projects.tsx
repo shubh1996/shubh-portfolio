@@ -19,12 +19,12 @@ export default function Projects() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-400 text-xs font-bold uppercase tracking-wider mb-4"
+                    className="flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 border border-orange-200 text-orange-600 text-xs font-bold uppercase tracking-wider mb-4"
                 >
                     <Rocket size={14} /> Projects
                 </motion.div>
-                <h2 className="text-4xl font-bold text-center">Projects & Innovation</h2>
-                <p className="text-slate-400 mt-4 text-center max-w-2xl">
+                <h2 className="text-4xl font-bold text-stone-900 text-center">Projects & Innovation</h2>
+                <p className="text-stone-500 mt-4 text-center max-w-2xl">
                     A showcase of my work spanning GenAI, automation, full-stack, systems programming, and more.
                 </p>
             </div>
@@ -40,19 +40,19 @@ export default function Projects() {
                             transition={{ delay: index < INITIAL_VISIBLE ? index * 0.08 : 0, duration: 0.4 }}
                             viewport={{ once: true }}
                         >
-                            <GlassCard className="h-full flex flex-col group hover:border-violet-500/40 transition-all duration-500">
+                            <GlassCard className="h-full flex flex-col group">
                                 <div className="flex-1">
-                                    <h3 className="text-xl font-bold mb-3 group-hover:text-violet-400 transition-colors">
+                                    <h3 className="text-xl font-bold text-stone-900 mb-3 group-hover:text-orange-600 transition-colors">
                                         {project.title}
                                     </h3>
-                                    <p className="text-slate-400 text-sm mb-6 leading-relaxed">
+                                    <p className="text-stone-500 text-sm mb-6 leading-relaxed">
                                         {project.description}
                                     </p>
                                     <div className="flex flex-wrap gap-2 mb-8">
                                         {project.tags.map((tag) => (
                                             <span
                                                 key={tag}
-                                                className="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-slate-800 text-slate-400 border border-slate-700"
+                                                className="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-stone-100 text-stone-500 border border-stone-200"
                                             >
                                                 {tag}
                                             </span>
@@ -60,13 +60,13 @@ export default function Projects() {
                                     </div>
                                 </div>
 
-                                <div className="flex items-center gap-4 mt-auto pt-6 border-t border-slate-800/50">
+                                <div className="flex items-center gap-4 mt-auto pt-6 border-t border-stone-100">
                                     {project.links.github !== "#" && (
                                         <a
                                             href={project.links.github}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors"
+                                            className="flex items-center gap-2 text-sm text-stone-500 hover:text-stone-900 transition-colors"
                                         >
                                             <Github size={18} />
                                             <span>Code</span>
@@ -77,7 +77,7 @@ export default function Projects() {
                                             href={project.links.deployed}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="flex items-center gap-2 text-sm text-cyan-400 hover:text-cyan-300 transition-colors"
+                                            className="flex items-center gap-2 text-sm text-orange-500 hover:text-orange-600 transition-colors"
                                         >
                                             <ExternalLink size={18} />
                                             <span>Live Demo</span>
@@ -94,7 +94,7 @@ export default function Projects() {
                 <div className="flex justify-center mt-12">
                     <button
                         onClick={() => setShowAll(!showAll)}
-                        className="flex items-center gap-2 px-6 py-2.5 rounded-full border border-slate-700 bg-white/[0.04] text-slate-300 hover:text-white hover:border-violet-500/40 transition-all text-sm font-medium"
+                        className="flex items-center gap-2 px-6 py-2.5 rounded-full border border-stone-200 bg-white text-stone-600 hover:text-stone-900 hover:border-orange-300 hover:bg-orange-50 transition-all text-sm font-medium shadow-sm"
                     >
                         {showAll ? (
                             <><ChevronUp size={16} /> Show Less</>

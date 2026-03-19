@@ -6,13 +6,13 @@
 }
 
 :root {
-  --background: #04091a;
-  --foreground: #e8edf8;
+  --background: #fdf8f3;
+  --foreground: #1c1917;
 }
 
 @layer base {
   body {
-    @apply bg-background text-foreground selection:bg-violet-500/30;
+    @apply bg-background text-foreground selection:bg-orange-300/40;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 }
@@ -23,16 +23,12 @@
     position: fixed;
     inset: 0;
     z-index: 50;
-    opacity: 0.03;
+    opacity: 0.025;
     background-image: url("https://grainy-gradients.vercel.app/noise.svg");
   }
 
   .glass {
-    @apply bg-white/[0.04] backdrop-blur-xl border border-white/[0.08];
-  }
-
-  .glass-nav {
-    @apply bg-[#04091a]/80 backdrop-blur-xl border-b border-white/[0.06];
+    @apply bg-white/80 backdrop-blur-xl border border-stone-200/80 shadow-sm;
   }
 
   .ai-glow {
@@ -41,7 +37,7 @@
 
   .ai-glow::before {
     content: "";
-    @apply absolute -inset-0.5 bg-gradient-to-r from-violet-500 to-cyan-500 rounded-xl blur opacity-20 group-hover:opacity-50 transition duration-1000 group-hover:duration-200;
+    @apply absolute -inset-0.5 bg-gradient-to-r from-orange-400 to-rose-400 rounded-xl blur opacity-10 group-hover:opacity-20 transition duration-1000 group-hover:duration-200;
   }
 
   .bento-grid {
@@ -52,7 +48,7 @@
   }
 
   .accent-gradient {
-    @apply bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400;
+    @apply bg-gradient-to-r from-orange-500 via-rose-500 to-violet-500;
   }
 }
 
