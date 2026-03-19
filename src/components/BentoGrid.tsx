@@ -12,20 +12,20 @@ export default function BentoGrid() {
                 <GlassCard className="col-span-1 md:col-span-2 row-span-2 group ai-glow">
                     <div className="h-full flex flex-col justify-between">
                         <div>
-                            <div className="w-12 h-12 rounded-xl bg-indigo-500/20 flex items-center justify-center mb-6">
-                                <BrainCircuit className="text-indigo-400" size={24} />
+                            <div className="w-12 h-12 rounded-xl bg-violet-500/20 flex items-center justify-center mb-6">
+                                <BrainCircuit className="text-violet-400" size={24} />
                             </div>
                             <h3 className="text-2xl font-bold mb-4">{content.googleStack.title}</h3>
                             <div className="flex flex-wrap gap-2">
                                 {content.googleStack.keywords.map((kw) => (
-                                    <span key={kw} className="px-3 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-sm">
+                                    <span key={kw} className="px-3 py-1 rounded-lg bg-violet-500/10 border border-violet-500/20 text-violet-300 text-sm">
                                         {kw}
                                     </span>
                                 ))}
                             </div>
                         </div>
                         <div className="mt-8">
-                            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-400 text-xs font-bold uppercase tracking-wider">
+                            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/20 text-violet-400 text-xs font-bold uppercase tracking-wider">
                                 <Zap size={12} /> {content.googleStack.badge}
                             </span>
                         </div>
@@ -81,7 +81,7 @@ export default function BentoGrid() {
                 </GlassCard>
 
                 {/* Frontend */}
-                <GlassCard className="col-span-1 md:col-span-2 row-span-1 border-indigo-500/20">
+                <GlassCard className="col-span-1 md:col-span-2 row-span-1 border-violet-500/20">
                     <div className="flex items-center justify-between h-full">
                         <div>
                             <h4 className="text-xl font-bold mb-4 flex items-center gap-2">
@@ -95,7 +95,7 @@ export default function BentoGrid() {
                                 ))}
                             </div>
                         </div>
-                        <Globe className="text-indigo-400/30 hidden md:block" size={60} />
+                        <Globe className="text-violet-400/30 hidden md:block" size={60} />
                     </div>
                 </GlassCard>
             </div>

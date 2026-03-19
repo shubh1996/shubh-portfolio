@@ -30,17 +30,17 @@ export default function Navbar() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
                 scrolled
-                    ? "bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/60 shadow-lg shadow-black/20"
+                    ? "bg-[#04091a]/85 backdrop-blur-xl border-b border-white/[0.06] shadow-lg shadow-black/30"
                     : "bg-transparent"
             }`}
         >
             <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
                 {/* Logo */}
                 <a href="#" className="text-white font-black text-xl tracking-tight">
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-violet-400">
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400">
                         {content.name.split(" ")[0]}
                     </span>
-                    <span className="text-slate-400 font-light">.dev</span>
+                    <span className="text-slate-500 font-light">.dev</span>
                 </a>
 
                 {/* Desktop nav */}
@@ -49,14 +49,15 @@ export default function Navbar() {
                         <a
                             key={link.href}
                             href={link.href}
-                            className="text-sm text-slate-400 hover:text-white transition-colors font-medium"
+                            className="text-sm text-slate-400 hover:text-white transition-colors font-medium relative group"
                         >
                             {link.label}
+                            <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-gradient-to-r from-violet-400 to-cyan-400 group-hover:w-full transition-all duration-300" />
                         </a>
                     ))}
                     <a
                         href={`mailto:${content.contact.email}`}
-                        className="px-4 py-1.5 rounded-full bg-indigo-600/20 border border-indigo-500/30 text-indigo-400 text-sm font-semibold hover:bg-indigo-600/40 transition-colors"
+                        className="px-4 py-1.5 rounded-full bg-gradient-to-r from-violet-600/20 to-fuchsia-600/20 border border-violet-500/30 text-violet-300 text-sm font-semibold hover:from-violet-600/40 hover:to-fuchsia-600/40 transition-all"
                     >
                         Hire Me
                     </a>
@@ -77,7 +78,7 @@ export default function Navbar() {
                 <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="md:hidden bg-slate-950/95 backdrop-blur-xl border-b border-slate-800 px-4 py-6 space-y-4"
+                    className="md:hidden bg-[#04091a]/95 backdrop-blur-xl border-b border-white/[0.06] px-4 py-6 space-y-4"
                 >
                     {navLinks.map((link) => (
                         <a
@@ -91,7 +92,7 @@ export default function Navbar() {
                     ))}
                     <a
                         href={`mailto:${content.contact.email}`}
-                        className="inline-block mt-2 px-5 py-2 rounded-full bg-indigo-600 text-white text-sm font-semibold"
+                        className="inline-block mt-2 px-5 py-2 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white text-sm font-semibold"
                     >
                         Hire Me
                     </a>

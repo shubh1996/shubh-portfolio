@@ -19,7 +19,7 @@ export default function Projects() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-bold uppercase tracking-wider mb-4"
+                    className="flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-400 text-xs font-bold uppercase tracking-wider mb-4"
                 >
                     <Rocket size={14} /> Projects
                 </motion.div>
@@ -40,9 +40,9 @@ export default function Projects() {
                             transition={{ delay: index < INITIAL_VISIBLE ? index * 0.08 : 0, duration: 0.4 }}
                             viewport={{ once: true }}
                         >
-                            <GlassCard className="h-full flex flex-col group hover:border-indigo-500/40 transition-all duration-500">
+                            <GlassCard className="h-full flex flex-col group hover:border-violet-500/40 transition-all duration-500">
                                 <div className="flex-1">
-                                    <h3 className="text-xl font-bold mb-3 group-hover:text-indigo-400 transition-colors">
+                                    <h3 className="text-xl font-bold mb-3 group-hover:text-violet-400 transition-colors">
                                         {project.title}
                                     </h3>
                                     <p className="text-slate-400 text-sm mb-6 leading-relaxed">
@@ -77,7 +77,7 @@ export default function Projects() {
                                             href={project.links.deployed}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="flex items-center gap-2 text-sm text-indigo-400 hover:text-indigo-300 transition-colors"
+                                            className="flex items-center gap-2 text-sm text-cyan-400 hover:text-cyan-300 transition-colors"
                                         >
                                             <ExternalLink size={18} />
                                             <span>Live Demo</span>
@@ -94,7 +94,7 @@ export default function Projects() {
                 <div className="flex justify-center mt-12">
                     <button
                         onClick={() => setShowAll(!showAll)}
-                        className="flex items-center gap-2 px-6 py-2.5 rounded-full border border-slate-700 bg-slate-900/50 text-slate-300 hover:text-white hover:border-indigo-500/50 transition-all text-sm font-medium"
+                        className="flex items-center gap-2 px-6 py-2.5 rounded-full border border-slate-700 bg-white/[0.04] text-slate-300 hover:text-white hover:border-violet-500/40 transition-all text-sm font-medium"
                     >
                         {showAll ? (
                             <><ChevronUp size={16} /> Show Less</>
